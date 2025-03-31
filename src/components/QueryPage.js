@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const backend = import.meta.env.VITE_BACKEND_URL;
+const backend = process.env.REACT_APP_BACKEND_URL;
 
 const QueryPage = ({ token, setToken }) => {
   const [query, setQuery] = useState("");
